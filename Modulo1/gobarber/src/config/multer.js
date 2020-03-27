@@ -6,6 +6,7 @@ import { extname, resolve } from 'path';
 
 // onde o multer irá armazenar os uploads
 // filename é como formatar e controlar o nome do arquivo da nossa imagem!
+// utilizando o crypto para gerar
 export default {
   storage: multer.diskStorage({
     destination: resolve(__dirname, '..', '..', 'tmp', 'uploads'),
